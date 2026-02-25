@@ -1,0 +1,12 @@
+provider:
+  name: ""
+  api_key: ""
+  model_name: ""
+
+database:
+  host: "localhost"
+  user: ""
+  password: 
+  name: ""
+output:
+  path: "output"

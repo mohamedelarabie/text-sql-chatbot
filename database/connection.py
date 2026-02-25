@@ -9,28 +9,22 @@ This module:
 
 import mysql.connector
 import yaml
-from pathlib import Path
+from utils.parser import parse_args , load_config
 
 
-
-def load_db_config():
-    """Load database configuration from YAML file."""
-    config_path = Path("config/db_config.yaml")
-    with open(config_path, 'r') as file:
-        config = yaml.safe_load(file)
-    return config
+args = parse_args()
 
 def get_server_connection():
     """
     Connect to MySQL server without specifying a database.
     Used for initial setup and database creation.
     """
-    config = load_db_config()
+    config = load_config()
 
     return mysql.connector.connect(
-        host=config["host"],
-        user=config["user"],
-        password=config["password"]
+        host=config["database"]["host"],
+        user=args.database_user,
+        password=args.database_password
     )
 
 
@@ -39,11 +33,11 @@ def get_database_connection():
     Connect directly to the inventory database.
     Used to create tables.
     """
-    config = load_db_config()
+    config = load_config()
 
     return mysql.connector.connect(
-        host=config["host"],
-        user=config["user"],
-        password=config["password"],
-        database=config["database"]
+        host=config["database"]["host"],
+        user=args.database_user,
+        password=args.database_password,
+        database=args.database_name
     )

@@ -1,0 +1,6 @@
+{
+    "response": {
+        "natural_language_answer": "The query calculates the total cost of assets for each site.\nThe result shows that:\n- The \"Cairo Warehouse\" site has a total asset value of 25,000.00.\n- The \"Alex Warehouse\" site has a total asset value of 3,000.00.",
+        "sql_query": "SELECT s.SiteName, SUM(a.Cost) AS TotalAssetValue\nFROM assets AS a\nJOIN sites AS s\nON a.SiteId = s.SiteId\nGROUP BY s.SiteName;"
+    }
+}

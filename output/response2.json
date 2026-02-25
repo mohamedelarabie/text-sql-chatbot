@@ -1,0 +1,6 @@
+{
+    "response": {
+        "natural_language_answer": "The SQL query is designed to retrieve all assets that were purchased in the current year.\n\nBased on the provided `assets` table data:\n*   Asset with `AssetId` 1 was purchased on `2024-01-10`.\n*   Asset with `AssetId` 2 was purchased on `2024-02-15`.\n\nThe `CreatedAt` timestamps in the schema (e.g., `2026-02-25`) suggest that the current year when the query was executed is likely 2026.\n\nTherefore, the condition `YEAR(PurchaseDate) = YEAR(CURDATE())` would translate to `YEAR(PurchaseDate) = 2026`.\nSince both assets in the sample data have `PurchaseDate` in 2024, neither of them satisfies the condition `2024 = 2026`.\n\n**Result:** The query returned an empty set because none of the assets in the `assets` table were purchased in the current year (2026).",
+        "sql_query": "SELECT *\nFROM assets\nWHERE YEAR(PurchaseDate) = YEAR(CURDATE())"
+    }
+}
