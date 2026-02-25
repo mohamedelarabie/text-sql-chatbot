@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" version="29.5.3">
+  <diagram name="Page-1" id="Cc27KRntNSrKAbkcoSnQ">
+    <mxGraphModel dx="991" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="o0IanvZSAszmMt8gUG_G-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User Question" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&#xa;Database Schema&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="430" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;LLM / Agent&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(Generates SQL based on Question + Schema)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="470" x="150" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-5" edge="1" parent="1" source="o0IanvZSAszmMt8gUG_G-2" style="endArrow=classic;html=1;rounded=0;exitX=0.178;exitY=1.053;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="310" as="sourcePoint" />
+            <mxPoint x="450" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-6" edge="1" parent="1" source="o0IanvZSAszmMt8gUG_G-1" style="endArrow=classic;html=1;rounded=0;exitX=0.662;exitY=1.04;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="200" />
+            </Array>
+            <mxPoint x="241" y="180" as="sourcePoint" />
+            <mxPoint x="240" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&#xa;Query Result&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Run Query" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&#xa; SQL Query&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;LLM / Agent&amp;nbsp;&lt;/div&gt;&lt;div&gt;(Synthesizes Result into Natural Language)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="290" x="250" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&#xa;Natural Language Answer&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="155" x="322.5" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-12" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="390" />
+            </Array>
+            <mxPoint x="370" y="380" as="sourcePoint" />
+            <mxPoint x="370" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-14" edge="1" parent="1" source="o0IanvZSAszmMt8gUG_G-9" style="endArrow=classic;html=1;rounded=0;exitX=0.582;exitY=1.047;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="540" />
+            </Array>
+            <mxPoint x="410" y="530" as="sourcePoint" />
+            <mxPoint x="410" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-16" edge="1" parent="1" source="o0IanvZSAszmMt8gUG_G-8" style="endArrow=classic;html=1;rounded=0;entryX=0.568;entryY=-0.04;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.582;exitY=0.987;exitDx=0;exitDy=0;exitPerimeter=0;" target="o0IanvZSAszmMt8gUG_G-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="680" />
+            </Array>
+            <mxPoint x="410" y="670" as="sourcePoint" />
+            <mxPoint x="410" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-17" edge="1" parent="1" source="o0IanvZSAszmMt8gUG_G-7" style="endArrow=classic;html=1;rounded=0;exitX=0.582;exitY=0.96;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="840" />
+            </Array>
+            <mxPoint x="410" y="830" as="sourcePoint" />
+            <mxPoint x="410" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o0IanvZSAszmMt8gUG_G-19" edge="1" parent="1" source="o0IanvZSAszmMt8gUG_G-10" style="endArrow=classic;html=1;rounded=0;exitX=0.543;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="970" />
+            </Array>
+            <mxPoint x="410" y="960" as="sourcePoint" />
+            <mxPoint x="410" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
