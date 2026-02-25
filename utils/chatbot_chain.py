@@ -1,3 +1,5 @@
+"""Refrence: https://alejandro-ao.com/chat-with-mysql-using-python-and-langchain/"""
+
 from operator import itemgetter
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
